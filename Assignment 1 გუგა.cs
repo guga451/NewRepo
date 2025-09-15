@@ -1,0 +1,348 @@
+﻿////     Homework1
+////{
+////    internal class Programe
+////    {
+////        static void Main(string[] args)
+////        {
+
+////            string correctUsername = "Guga";
+////            string correctpasswort = "1234";
+
+////            Console.WriteLine("Enter username:");
+////            string username = Console.ReadLine();
+
+////            Console.WriteLine("Enter password:");
+////            string password = Console.ReadLine();
+
+////            string correctUsername1 = correctUsername;
+////            string correctpasswort1 = correctpasswort;
+
+////            if (username == correctUsername1 && password == correctpasswort1)
+////            {
+////                Console.WriteLine("Login successful!");
+////            }
+////            else
+////            {
+////            Console.WriteLine("Login failed. Invalid credentials!");
+////            return;
+////            }     
+////        }
+////    }
+
+
+
+
+
+//// Homework 2
+//// See https://aka.ms/new-console-template for more information
+//Console.WriteLine("Type Your Mark (0-100)");
+//int mark = Convert.ToInt16(Console.ReadLine());
+
+//if (mark >= 90 && mark <= 100)
+//{ Console.WriteLine("Your Grade is A+"); }
+//else if (mark >= 80 && mark <= 89)
+//{ Console.WriteLine("Your Grade is A"); }
+//else if (mark >= 70 && mark <= 79)
+//{ Console.WriteLine("Your Grade is B"); }
+//else if (mark >= 31 && mark <= 69)
+//{ Console.WriteLine("Your Grade is C"); }
+//else if (mark <= 30)
+//{ Console.WriteLine("Your Grade is D, try better next time"); }
+
+//if (mark < 0 || mark > 100)
+//{ Console.WriteLine("Invalid Mark"); }
+//return;
+
+
+
+
+//// Homework 3
+
+//Console.WriteLine("Select Amount of Money:");
+//double amount = Convert.ToDouble(Console.ReadLine());
+
+//double discountPersent;
+//double discountPersent1;
+
+//discountPersent = 10;
+//discountPersent1 = 5;
+
+
+//double finalAmount = amount - (amount * discountPersent / 100);
+//double finalAmount1 = amount - (amount * discountPersent1 / 100);
+
+//if (amount > 1000)
+//{
+//    discountPersent = 10;
+
+//    Console.WriteLine($"Your Final Amount after {discountPersent}% discount is: {finalAmount}");
+
+//}
+//else if (amount < 1000)
+//{
+//    discountPersent1 = 5;
+//    Console.WriteLine($"Your Final Amount after {discountPersent1}% discount is: {finalAmount1}");
+//}
+
+
+
+
+
+////// Homework 4
+
+//// See https://aka.ms/new-console-template for more information
+//Console.WriteLine("Select Numbers from 1-7");
+
+//byte number = Convert.ToByte(Console.ReadLine());
+
+//if (number == 1)
+//{
+//    Console.WriteLine("Monday");
+//}
+//else if (number == 2)
+//{
+//    Console.WriteLine("Tuesday");
+//    Console.WriteLine("Tuesday");
+//}
+//else if (number == 3)
+//{
+//    Console.WriteLine("Wednesday");
+//}
+//else if (number == 4)
+//{
+//    Console.WriteLine("Thursday");
+//}
+//else if (number == 5)
+//{
+//    Console.WriteLine("Friday");
+//}
+//else if (number == 6)
+//{
+//    Console.WriteLine("Saturday");
+//}
+//else if (number == 7)
+//{
+//    Console.WriteLine("Sunday");
+
+//}
+//else
+//{
+//    Console.WriteLine("Invalid number. Please select number from 1 to 7 range.");
+//}
+
+
+
+
+////Homework 5
+
+//// See https://aka.ms/new-console-template for more information
+
+//Console.WriteLine("Type One Colour From: Green Yellow Red");
+//String colour = Console.ReadLine();
+
+//if (colour == "Green")
+//{
+//    Console.WriteLine("Go!!!");
+//}
+//else if (colour == "Yellow")
+//{
+//    Console.WriteLine("Get Ready!!!");
+//}
+//else if (colour == "Red")
+//{
+//    Console.WriteLine("Stop!!!");
+//}
+
+//else
+//{
+//    Console.WriteLine("You have selected an invalid colour");
+//}
+
+
+
+
+//// Homework 6
+
+// See https://aka.ms/new-console-template for more information
+//using System;
+//class Programe
+//{
+//    static void Main()
+//    {
+
+//        Console.WriteLine("Enter Your Balance: ");
+//        double Balance = double.Parse(Console.ReadLine()!);
+
+//        Console.WriteLine("Enter Withdrawal Amount");
+
+//        double Withdrawal = double.Parse(Console.ReadLine()!);
+
+//        if (Withdrawal <= 0)
+//        {
+//            Console.WriteLine("Invalid Amount For Withdrawal");
+//        }
+
+//        else if (Withdrawal > Balance)
+//        {
+//            Console.WriteLine("Insuficiant Amount of Money on Balance");
+//        }
+
+//        else
+//        {
+//            double RemainBalance = Balance - Withdrawal;
+//            Console.WriteLine($"Withdrawal Successfully Complited!Your Remained Balance is: {RemainBalance}");
+//        }
+//    }
+//}
+
+
+
+
+//// Homework 7
+
+//// See https://aka.ms/new-console-template for more information
+//Console.WriteLine("Please Put the Mark");
+
+//Double Mark = Convert.ToDouble(Console.ReadLine());
+
+//double mark = Mark;
+
+
+//if (Mark >= 50 && Mark <= 100)
+//{
+//    Console.WriteLine("Congretualtions You Passed!");
+//}
+
+//else if (Mark < 50)
+//{
+//    Console.WriteLine($"Your Mark {Mark} is not enaught to pass the stage");
+//}
+//else if (Mark > 100)
+//{
+//    Console.WriteLine("Please Put Number from (0-100) Range");
+//}
+//else
+//{
+//    Console.WriteLine("Invalid Number");
+//}
+
+
+
+
+//// Homework 8
+
+//// See https://aka.ms/new-console-template for more information
+//using System;
+//class Programe
+//{
+//    static void Main()
+//    {
+//        Console.WriteLine("Enter firt number a:");
+//        double a = double.Parse(Console.ReadLine()!);
+//        Console.WriteLine("Enter second number b:");
+//        double b = double.Parse(Console.ReadLine()!);
+//        Console.WriteLine("Execute Operation (+,-,*,/)");
+//        string op = Console.ReadLine()!;
+
+//        double result;
+
+//        if (op == "+")
+//        {
+//            result = a + b;
+//            Console.WriteLine($"Result: {a}+{b} = {result}");
+
+//        }
+//        else if (op == "-")
+//        {
+//            result = a - b;
+//            Console.WriteLine($"Result: {a}-{b} = {result}");
+//        }
+//        else if (op == "*")
+//        {
+//            result = a * b;
+//            Console.WriteLine($"Result: {a}*{b} = {result}");
+//        }
+//        else if (op == "/")
+//        {
+//            result = a / b;
+//            Console.WriteLine($"Result: {a}/{b} = {result}");
+//        }
+
+//        else
+//        {
+//            Console.WriteLine("Invalid Operation");
+//        }
+//    }
+//}
+
+
+
+//// Homework 9
+
+//// See https://aka.ms/new-console-template for more information
+//Console.WriteLine("Enter Your Age");
+
+//int age = Convert.ToInt32(Console.ReadLine());
+
+//if (age < 0)
+//{
+//    Console.WriteLine("Invalid Age");
+//}
+
+//else if (age >= 18)
+//{
+//    Console.WriteLine("Eligible to Vote");
+//}
+
+//else
+//{
+//    Console.WriteLine("Not Eligble Age");
+//}
+
+
+
+
+//// Homework 10
+
+//// See https://aka.ms/new-console-template for more information
+//Console.WriteLine("Enter Your Position");
+//string position = Console.ReadLine()!;
+//Console.WriteLine("Enter Your Sallary");
+//double sallary = double.Parse(Console.ReadLine()!);
+//double bonusPercent;
+
+
+//if (position == "Manager" && sallary > 2500)
+
+//{
+//    bonusPercent = 15;
+//}
+
+//else if (position == "Manager" && sallary <= 2500)
+//{
+//    bonusPercent = 10;
+//}
+
+//else if (position == "Developer" && sallary > 2000)
+//{
+//    bonusPercent = 12;
+//}
+
+//else if (position == "Developer" && sallary < 2000)
+//{
+//    bonusPercent = 8;
+//}
+
+//else
+//{
+//    bonusPercent = 5;
+//}
+
+//double bonusAmount = sallary * bonusPercent / 100;
+//double totalSalary = sallary + bonusAmount;
+
+//Console.WriteLine($"Possition: {position}");
+//Console.WriteLine($"Pure Sallary: {sallary}");
+//Console.WriteLine($"Bonus: {bonusPercent}%");
+//Console.WriteLine($"Total Salary: {totalSalary}");
+
