@@ -502,3 +502,115 @@
 //    number++;
 //}
 //Console.WriteLine($"Sum = {sum}");
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        Console.WriteLine("Enter Corresponding Number");
+
+//        int rows = 4;
+
+//        for (int i = 0; i < rows; i++)
+//        {
+//            Console.Write(" ");
+//            {
+//                for (int j = 1; j <= (2 + i - 1); j++)
+//                {
+//                    Console.Write("*");
+//                }
+//                Console.WriteLine();
+//            }
+//        }
+//    }
+//}
+
+
+
+
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        Console.WriteLine("Enter Start number ");
+//        int start = int.Parse(Console.ReadLine()!);
+//        Console.WriteLine("Enter End Number");
+//        int end = int.Parse(Console.ReadLine()!);
+
+//        if (start > end)
+//        {
+//            Console.WriteLine("Start number must be less than End number!");
+//            return;
+//        }
+//        else
+//        {
+//            for (int i = start; i <= end; i++)
+//            {
+//                if (i % 2 == 0)
+//                {
+//                    Console.WriteLine($"{i}");
+//                }
+
+//            }
+//        }
+//    }
+//}
+
+
+
+
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        try
+//        {
+//            Console.WriteLine("Enter First Number ");
+//            double num1 = double.Parse(Console.ReadLine()!);
+
+//            Console.WriteLine("Enter Coresponding Operator (+, -, *, /) ");
+//            string op = Console.ReadLine()!;
+//            Console.WriteLine("Enter Second Number ");
+//            double num2 = double.Parse(Console.ReadLine()!);
+
+//            double result;
+//            switch (op)
+//            {
+//                case "+":
+//                    result = num1 + num2;
+//                    Console.WriteLine($"Result: {result}");
+//                    break;
+//                case "-":
+//                    result = num1 - num2;
+//                    Console.WriteLine($"Result: {result}");
+//                    break;
+//                case "*":
+//                    result = num1 * num2;
+//                    Console.WriteLine($"Result: {result}");
+//                    break;
+//                case "/":
+//                    if (num2 == 0)
+//                    {
+//                        throw new ArgumentException("Division By Zero is not Allowed");
+//                    }
+//                    result = num1 / num2;
+//                    Console.WriteLine($"Result: {result}");
+//                    break;
+//                default:
+//                    Console.WriteLine("Error: Invalid operator. Please use +, -, *, or /.");
+//                    break;
+//            }
+//        }
+//        catch (Exception ex)
+//        {
+//            Console.WriteLine(ex.Message);
+//        }
+//    }
+//}
