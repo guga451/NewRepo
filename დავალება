@@ -614,3 +614,312 @@
 //        }
 //    }
 //}
+
+==================================================================================================================================================================
+
+
+//int[] numbers = [1, 2, 3, 4, 5];
+
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    Console.WriteLine(numbers[i]);
+//}
+
+
+
+
+//int[] numbers = [1, 2, 3, 4, 5];
+
+//int max = 0;
+
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    if (numbers[i] > max)
+//        max = numbers[i];
+//}
+//Console.WriteLine(max);
+
+
+
+
+//int[] numbers = [1, 2, 3, 4, 5];
+
+//int min = numbers.Min();
+
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    if (numbers[i] < min)
+//        min = numbers[i];
+//}
+//Console.WriteLine(min);
+
+
+
+
+
+//int[] numbers = [1, 2, 3, 4, 5];
+
+//int sum = 0;
+
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    sum =sum+ numbers[i];
+//}
+//Console.WriteLine(sum);
+
+
+
+
+
+//int[] numbers = [1, 2, 3, 4, 5];
+
+////Console.WriteLine("Original Array");
+
+////for (int i = 0; i < numbers.Length; i++)
+
+////    Console.Write(numbers[i]);
+////Console.WriteLine();
+
+//Console.WriteLine("Reversed Array");
+
+//for (int i = 4; i>=0; i--)
+
+//    Console.Write(numbers[i]);
+
+
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        int[] numbers = [1, 2, 3, 4, 5];
+
+//        Console.WriteLine("Odd numbers are");
+
+//        for (int i = 0; i < numbers.Length; i++)
+//        {
+//            if (numbers[i] % 2 != 0)
+
+//                Console.WriteLine($"{numbers[i]} ");
+//        }
+
+//        Console.WriteLine("Odd numbers are");
+//        for (int i = 0; i < numbers.Length; i++)
+//        {
+
+//            if (numbers[i] % 2 == 0)
+//                Console.WriteLine($"{numbers[i]} ");
+//        }
+//    }
+//}
+
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        int[] numbers = [1, 2, 3, 4, 5];
+
+//        int evenCount = 0;
+//        int oddCount = 0;
+
+//        for (int i = 0; i < numbers.Length; i++)
+//        {
+//            if (numbers[i] % 2 == 0)
+//            {
+//                evenCount++;
+//            }
+
+//            else
+//            {
+//                oddCount++;
+//            }
+
+//        }
+//        Console.WriteLine($"Evens are: {evenCount}");
+//        Console.WriteLine($"Odds are: {oddCount}");
+//    }
+//}
+
+
+
+
+
+
+
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        int[] numbers = [1, 2, 3, 4, 5];
+
+//        Console.WriteLine("Enter the Number");
+
+//       int number= int.Parse(Console.ReadLine());
+//       bool found = false;
+//        for (int i = 0; i < numbers.Length; i++)
+//        {
+//            if (number == numbers[i])
+//            {
+//                Console.WriteLine($"Number {number} exists at index {i}");
+//                found = true;
+//                break;
+//            }
+//        }
+//            if (!found)
+//            {
+//                Console.WriteLine($" Number {number} does't exist");
+
+//            }
+
+//        }
+
+
+//    }
+
+
+
+
+
+//using System.Linq;
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        int[] numbers = [1, 2, 3, 4, 5];
+//        int[] copiednumbers = new int[numbers.Length];
+
+//        for (int i = 0; i < numbers.Length; i++)
+
+//                copiednumbers[i] = numbers[i];
+//        Console.WriteLine($" Original [{string.Join(",", numbers)}]");
+//        Console.WriteLine($" Dublicated [{string.Join(",",copiednumbers)}]");
+
+//    }
+
+
+//}
+
+
+
+
+
+
+//using System.Linq;
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        int[] numbers = [1, 2, 3, 4, 5];//   
+//        int secondmax = 0;
+
+//        for (int i = 0; i < numbers.Length; i++)
+
+//            secondmax = numbers.Length - 1;
+
+//        Console.WriteLine($"Second large number within Array is {secondmax}.");
+
+//    }
+
+
+//}
+
+
+
+//using System.Linq;
+
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+
+//        int[] numbers = [1, 2, 3, 4, 5, 5, 5, 2, 1, 1, 2];
+
+
+
+//        for (int i = 0; i < numbers.Length; i++)
+//        {
+
+//            int count = 0;
+//            int currentNumber = numbers[i];
+
+//            for (int j = 1; j < numbers.Length; j++)
+//            {
+//                if (numbers[j] == currentNumber)
+
+//                {
+
+//                    count++;
+//                }
+
+//                Console.WriteLine($" Number {currentNumber} appear {count} times");
+//            }
+//        }
+//    }
+//}
+
+
+
+
+
+//{ 
+//       int[] numbers = { 1, 2, 3, 4, 5 };
+//       int positions = 2; 
+
+//        Console.WriteLine($"Original: [{string.Join(", ", numbers)}]");
+
+//        int[] rotatedRight = RotateRight(numbers, positions);
+//        Console.WriteLine($"Rotated Right by {positions}: [{string.Join(", ", rotatedRight)}]");
+//}
+
+//    static int[] RotateRight(int[] arr, int positions)
+//    {
+//        int length = arr.Length;
+//        positions = positions % length; 
+//        int[] result = new int[length];
+
+//        for (int i = 0; i < length; i++)
+//        {
+//            int newPosition = (i + positions) % length;
+//            result[newPosition] = arr[i];
+//        }
+
+//        return result;
+//    }
+
+
+
+
+
+private static void Main(string[] args)
+{
+    int[] numbers = { 64, 35, 25, 12, 21, 99, 90 };
+
+    Console.WriteLine($"Original Array: [{string.Join(", ", numbers)}]");
+
+    BubbleSort(numbers);
+
+    Console.WriteLine($"Sorted Array: [{string.Join(", ", numbers)}]");
+}
+
+static void BubbleSort(int[] arr)
+{
+    int n = arr.Length;
+
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
