@@ -923,3 +923,48 @@ static void BubbleSort(int[] arr)
         }
     }
 }
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+namespace Functions
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            int userNumber = GetUserInput();
+            bool found = SearchNumber(numbers, userNumber);
+            DisplayResult(userNumber, found);
+
+        }
+        static int GetUserInput()
+        {
+            Console.Write("Enter a number to search: ");
+            int number = int.Parse(Console.ReadLine());
+            return number;
+        }
+
+        static bool SearchNumber(int[] numbers, int userNumber)
+        {
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] == userNumber)
+                {
+                    Console.WriteLine($"Number {userNumber} exists at index {i}.");
+                    return true;
+                }
+            }
+            return false;
+        }
+        static void DisplayResult(int userNumber, bool found)
+        {
+            if (!found)
+            {
+                Console.WriteLine($"Number {userNumber} does not exist in the array.");
+            }
+        }
+    }
+}
